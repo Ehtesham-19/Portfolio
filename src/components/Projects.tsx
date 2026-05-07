@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Monitor } from "lucide-react";
+import { ExternalLink, Monitor } from "lucide-react";
 import { Parallax } from "./Parallax";
+import Image from "next/image";
 
 const projects = [
   {
@@ -83,10 +84,11 @@ export function Projects() {
               >
                 <div className="relative h-48 overflow-hidden bg-secondary/20">
                   {project.image ? (
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">

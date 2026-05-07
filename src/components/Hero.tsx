@@ -11,7 +11,6 @@ export function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 45]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   // Mouse Parallax effect
