@@ -18,8 +18,8 @@ export function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-          <div className="w-20 h-1.5 bg-primary mx-auto rounded-full" />
+          <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter italic">About Me</h2>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-purple-600 mx-auto rounded-full shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -50,37 +50,42 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-semibold">
-              Crafting Digital Excellence as a Shopify & Frontend Developer
+            <h3 className="text-2xl md:text-3xl font-bold leading-tight">
+              Crafting High-Performance Shopify Stores & React.js Applications
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Hello! I&apos;m Muhammad Ehtesham Ayyaz, a developer dedicated to 
-              transforming ideas into high-quality digital products. With a strong 
-              focus on Shopify ecosystem and modern frontend technologies, I help 
-              businesses scale and users enjoy seamless web experiences.
+              Hi, I&apos;m Muhammad Ehtesham — a Shopify Developer and
+              Front-End Engineer with 2+ years of hands-on experience
+              building custom Shopify 2.0 storefronts and dynamic
+              React.js single-page applications. I specialize in Liquid
+              templating, Checkout Extensibility, Metaobjects, and
+              headless commerce via the Shopify Storefront API (GraphQL).
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My approach combines technical proficiency with an eye for design, 
-              ensuring that every project is not only functional but also visually 
-              compelling and user-centric. I thrive on solving complex problems 
-              and staying at the forefront of the ever-evolving web development landscape.
+              I obsess over the details that drive real business results —
+              Core Web Vitals scores, Largest Contentful Paint, conversion
+              rate optimization, and pixel-perfect mobile-first UIs. Whether
+              you need a blazing-fast Shopify store, a custom React.js SPA,
+              or a Stripe & PayPal payment integration — I deliver clean,
+              scalable code with zero shortcuts.
             </p>
-            <div className="grid grid-cols-2 gap-4 pt-4">
+            
+            <div className="grid grid-cols-2 gap-6 py-6 border-t border-border mt-8">
               <div>
-                <p className="font-semibold">Role</p>
-                <p className="text-sm text-muted-foreground">Frontend / Shopify Dev</p>
+                <div className="text-2xl font-bold text-primary">2+</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider">Years Experience</div>
               </div>
               <div>
-                <p className="font-semibold">Experience</p>
-                <p className="text-sm text-muted-foreground">2+ Years </p>
+                <div className="text-2xl font-bold text-primary">6+</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider">Projects Delivered</div>
               </div>
               <div>
-                <p className="font-semibold">Email</p>
-                <p className="text-sm text-muted-foreground">mehteshamdeveloper@gmail.com</p>
+                <div className="text-2xl font-bold text-primary">100%</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider">Remote Ready</div>
               </div>
               <div>
-                <p className="font-semibold">Location</p>
-                <p className="text-sm text-muted-foreground">Bahawalpur,Punjab,Pakistan</p>
+                <div className="text-2xl font-bold text-primary">90+</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider">Avg Lighthouse Score</div>
               </div>
             </div>
           </motion.div>

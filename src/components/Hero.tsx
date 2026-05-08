@@ -27,12 +27,12 @@ export function Hero() {
   };
 
   return (
-    <section 
+    <section
       ref={containerRef}
       onMouseMove={handleMouseMove}
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      <motion.div 
+      <motion.div
         style={{ opacity }}
         className="container mx-auto px-4 relative z-10 text-center"
       >
@@ -41,6 +41,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold mb-6 tracking-widest uppercase">
+            ✦ Available for Remote Work Worldwide
+          </div>
           <h2 className="text-primary font-medium tracking-wider mb-4 uppercase text-sm">
             Welcome to my portfolio
           </h2>
@@ -50,20 +53,25 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
+          className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9]"
         >
-          I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Muhammad Ehtesham Ayyaz</span>
+          I&apos;m{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 via-primary to-purple-600 drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+            Muhammad Ehtesham Ayyaz
+          </span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10"
+          className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10"
         >
-          Specializing in <span className="text-foreground font-semibold">High-Conversion</span> Shopify stores and 
-          <span className="text-foreground font-semibold">Performance Engineering</span>. I turn visitors into loyal customers through 
-          data-driven frontend excellence.
+          <span className="text-foreground font-semibold">
+            Shopify Developer & React.js Front-End Engineer
+          </span>{" "}
+          — I build fast, conversion-optimized Shopify 2.0 storefronts and
+          high-performance SPAs that turn visitors into customers.
         </motion.p>
 
         <motion.div
@@ -86,21 +94,6 @@ export function Hero() {
             Contact Me
           </a>
         </motion.div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-muted rounded-full p-1">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-            className="w-full h-2 bg-muted rounded-full"
-          />
-        </div>
       </motion.div>
     </section>
   );

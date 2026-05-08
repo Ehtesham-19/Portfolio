@@ -9,33 +9,33 @@ import Image from "next/image";
 const projects = [
   {
     title: "Tiletopia",
-    description: "A design-forward e-commerce platform for premium tiles. Implemented advanced filtering, a sample ordering system, and a robust B2B pro program.",
+    description: "Built a design-forward Shopify 2.0 storefront for a premium tile brand — featuring advanced Liquid-based product filtering, a B2B pro program with custom Metafields, and a sample ordering system that increased average order value.",
     image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80",
-    tags: ["Shopify", "Liquid", "B2B", "Filtering"],
+    tags: ["Shopify 2.0", "Liquid", "B2B", "Metafields", "Checkout Extensibility"],
     live: "https://tiletopia.com/",
     github: "#"
   },
   {
     title: "Exercere",
-    description: "Exclusive activewear and loungewear brand based in Copenhagen. Optimized for international shipping, bundle discounts, and seamless social integration.",
+    description: "Developed an international Shopify storefront for a Copenhagen-based activewear brand — optimizing for multi-currency, international shipping logic, bundle discounts, and social commerce integrations that boosted mobile conversion rate.",
     image: "https://images.unsplash.com/photo-1506152983158-b4a74a01c721?w=800&q=80",
-    tags: ["Shopify", "UI/UX", "International", "Marketing"],
+    tags: ["Shopify", "International", "CRO", "Responsive", "UI/UX"],
     live: "https://exercere.com/",
     github: "#"
   },
   {
     title: "Anya Active",
-    description: "Inclusive activewear label focusing on movement. Integrated loyalty rewards, size guides, and back-in-stock notifications for enhanced retention.",
+    description: "Engineered a retention-focused Shopify store for an inclusive activewear label — integrating loyalty rewards via Metaobjects, automated back-in-stock notifications, and custom size guide components to improve Customer Lifetime Value (LTV).",
     image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=800&q=80",
-    tags: ["Shopify", "Loyalty", "Retention", "Responsive"],
+    tags: ["Shopify", "Loyalty", "Retention", "Metaobjects", "Responsive"],
     live: "https://www.anyaactive.com/",
     github: "#"
   },
   {
     title: "Hanne Bloch",
-    description: "Luxury fashion house specializing in silk swimwear and apparel. Focused on high-end visual storytelling and premium collection management.",
+    description: "Crafted a luxury Shopify storefront for a premium silk swimwear brand — focused on high-end visual storytelling, premium collection management, and a bespoke Liquid theme with editorial styling and fast LCP scores.",
     image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80",
-    tags: ["Shopify", "Luxury", "Liquid", "Styling"],
+    tags: ["Shopify", "Liquid", "Luxury", "Performance", "Theme Dev"],
     live: "https://hanne-bloch.com/",
     github: "#"
   },
@@ -68,8 +68,8 @@ export function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
-          <div className="w-20 h-1.5 bg-primary mx-auto rounded-full" />
+          <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter italic">Featured Projects</h2>
+          <div className="w-24 h-2 bg-gradient-to-r from-primary to-purple-600 mx-auto rounded-full shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
@@ -80,7 +80,7 @@ export function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group relative bg-background border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:-translate-y-2 shadow-sm hover:shadow-xl w-full flex flex-col"
+                className="group relative bg-background border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover:-translate-y-2 shadow-sm hover:shadow-xl w-full flex flex-col min-h-[540px]"
               >
                 <div className="relative h-48 overflow-hidden bg-secondary/20">
                   {project.image ? (
@@ -115,8 +115,10 @@ export function Projects() {
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm flex-grow">
+                  <h3 className="text-xl font-bold mb-2 min-h-[3.5rem] overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm flex-grow overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:4]">
                     {project.description}
                   </p>
                 </div>
