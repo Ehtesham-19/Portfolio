@@ -8,6 +8,30 @@ import Image from "next/image";
 
 const projects = [
   {
+    title: "Product Scrapper Bay",
+    description: "Designed and built an automated e-commerce web scraping dashboard. The tool extracts full product catalogs, pricing history, reviews, and image metadata from major marketplaces (Amazon, eBay, etc.) and converts them into structured CSV/JSON data or syncs them directly with client storefronts.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    tags: ["Next.js", "Puppeteer / Cheerio", "Web Scraping", "API Integration", "Automation"],
+    live: "https://product-scrapper-bay.vercel.app/",
+    github: "#"
+  },
+  {
+    title: "Shopify Audit AI",
+    description: "Developed an AI-powered merchant auditor that analyzes Shopify storefronts in real-time. Leverages modern LLM APIs to perform comprehensive UI/UX responsiveness checks, Core Web Vitals profiling, and technical SEO audits, delivering actionable conversion optimization reports.",
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
+    tags: ["Next.js", "AI / LLM API", "CRO", "Lighthouse API", "Tailwind CSS"],
+    live: "https://shopify-audit-ai-six.vercel.app/",
+    github: "#"
+  },
+  {
+    title: "Shopify Merchant Tool",
+    description: "Engineered a store management utility dashboard. Integrates with the Shopify Admin API (GraphQL) to provide bulk product metafield editing, theme backups, and custom collection automation to reduce store administration overhead.",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+    tags: ["React.js", "TypeScript", "Shopify Admin API", "Polaris UI", "GraphQL"],
+    live: "https://shopify-tool-one.vercel.app/",
+    github: "#"
+  },
+  {
     title: "Tiletopia",
     description: "Built a design-forward Shopify 2.0 storefront for a premium tile brand — featuring advanced Liquid-based product filtering, a B2B pro program with custom Metafields, and a sample ordering system that increased average order value.",
     image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80",
