@@ -59,7 +59,7 @@ export function About() {
               building custom Shopify 2.0 storefronts and dynamic
               React.js single-page applications. I specialize in Liquid
               templating, Checkout Extensibility, Metaobjects, and
-              headless commerce via the Shopify Storefront API (GraphQL).
+              headless commerce via the Shopify Storefront API .
             </p>
             <p className="text-muted-foreground leading-relaxed">
               I obsess over the details that drive real business results —
@@ -72,11 +72,11 @@ export function About() {
             
             <div className="grid grid-cols-2 gap-6 py-6 border-t border-border mt-8">
               <div>
-                <div className="text-2xl font-bold text-primary">2+</div>
+                <div className="text-2xl font-bold text-primary">5+</div>
                 <div className="text-xs text-muted-foreground uppercase tracking-wider">Years Experience</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">9+</div>
+                <div className="text-2xl font-bold text-primary">200+</div>
                 <div className="text-xs text-muted-foreground uppercase tracking-wider">Projects Delivered</div>
               </div>
               <div>
@@ -84,7 +84,7 @@ export function About() {
                 <div className="text-xs text-muted-foreground uppercase tracking-wider">Remote Ready</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">90+</div>
+                <div className="text-2xl font-bold text-primary">85+</div>
                 <div className="text-xs text-muted-foreground uppercase tracking-wider">Avg Lighthouse Score</div>
               </div>
             </div>
