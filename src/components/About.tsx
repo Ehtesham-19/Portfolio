@@ -55,7 +55,7 @@ export function About() {
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               Hi, I&apos;m Muhammad Ehtesham — a Shopify Developer and
-              Front-End Engineer with 2+ years of hands-on experience
+              Front-End Engineer with 5+ years of hands-on experience
               building custom Shopify 2.0 storefronts and dynamic
               React.js single-page applications. I specialize in Liquid
               templating, Checkout Extensibility, Metaobjects, and
