@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { IconGithub, IconLinkedin, IconMail } from "@/components/Icons";
 
 export function Footer() {
   return (
@@ -15,23 +15,26 @@ export function Footer() {
             href="https://github.com/Ehtesham-19"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors"
+            className="text-muted-foreground hover:text-primary transition-colors p-1"
+            aria-label="GitHub"
           >
-            <Github className="h-5 w-5" />
+            <IconGithub className="h-5 w-5" />
           </a>
           <a
             href="https://www.linkedin.com/in/muhammad-ehtesham-ayyaz/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors"
+            className="text-muted-foreground hover:text-primary transition-colors p-1"
+            aria-label="LinkedIn"
           >
-            <Linkedin className="h-5 w-5" />
+            <IconLinkedin className="h-5 w-5" />
           </a>
           <a
             href="mailto:mehteshamdeveloper@gmail.com"
-            className="text-muted-foreground hover:text-primary transition-colors"
+            className="text-muted-foreground hover:text-primary transition-colors p-1"
+            aria-label="Email"
           >
-            <Mail className="h-5 w-5" />
+            <IconMail className="h-5 w-5" />
           </a>
         </div>
       </div>
