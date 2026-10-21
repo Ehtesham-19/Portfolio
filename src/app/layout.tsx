@@ -40,12 +40,27 @@ export const metadata: Metadata = {
     siteName: "Muhammad Ehtesham Ayyaz - Shopify & Front-End Developer",
     locale: "en_US",
     type: "website",
+   images: [
+      {
+        url: "/profile.png",
+        width: 1200,
+        height: 1200,
+        alt: "Muhammad Ehtesham Ayyaz - Shopify Developer & Front-End Engineer",
+      },
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 1200,
+        alt: "Muhammad Ehtesham Ayyaz - Shopify Developer & Front-End Engineer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shopify Developer & Front-End Engineer | Muhammad Ehtesham Ayyaz",
     description:
       "Fast, conversion-focused Shopify 2.0 storefronts, Liquid themes, and modern React/Next.js applications.",
+    images: ["/profile.png"],
   },
   robots: {
     index: true,
@@ -82,6 +97,7 @@ const jsonLd = {
         "React",
         "Next.js"
       ],
+      image: "https://www.ehteshamdeveloper.dev/profile.png",
       email: "mailto:mehteshamdeveloper@gmail.com"
     },
     {
@@ -103,6 +119,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="image_src" href="/profile.png" />
+        <meta property="og:image" content="https://www.ehteshamdeveloper.dev/profile.png" />
+        <meta property="og:image:secure_url" content="https://www.ehteshamdeveloper.dev/profile.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="800" />
+        <meta property="og:image:alt" content="Muhammad Ehtesham Ayyaz - Shopify Developer & Front-End Engineer" />
+        <meta name="twitter:image" content="https://www.ehteshamdeveloper.dev/profile.png" />
+        <meta name="twitter:image:alt" content="Muhammad Ehtesham Ayyaz - Shopify Developer & Front-End Engineer" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
